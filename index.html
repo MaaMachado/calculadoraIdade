@@ -11,8 +11,8 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
+        <nav id="menu">
+            <ul id="menu-list">
                 <a href="#inicio"><li>INÍCIO</li></a>
                 <a href="#sobre"><li>SOBRE</li></a>
                 <a href="#calculadora"><li>CALCULADORA</li></a>
@@ -20,21 +20,52 @@
         </nav>
     </header>
 
-    <section id="inicio"></section>
+    <section id="inicio">
+        <h1 id="tittle"><b>Calculadora</b><br> de Idade</h1>
+    </section>
 
-    <section id="sobre"></section>
+    <section id="sobre" style="display: none;"></section>
 
-    <section id="calculadora"></section>
+    <section id="calculadora" style="display: none;">
+        <!-- <div id="conteudo-box">
+            <h1 class="txt6">Calculador de idade</h1>
+            <hr>
+            <div id="botoes">
+              <div class="dia">
+                <label for="dia">Dia:</label>
+                <br>
+                <input type="number" id="dia" min="1" max="31" required> 
+            </div>
+            <div class="mes">
+              <label for="mes">Mês:</label>
+              <br>
+              <input type="number" id="mes" min="1" max="12" required>
+          </div>
+       
+            <div class="ano">
+              <label for="ano">Ano:</label> 
+              <br>
+              <input type="number" id="ano" min="1900" max="9999" required>
+          </div>
+      
+            <button onclick="calcular()" id="calc">CALCULAR</button>
+            </div>
+            
+          </div>
+        
+      </section>
+              <div id="resultado"></div> -->
+    </section>
 
     <footer>
-        <div>
+        <div id="btn-links">
             <a href="https://github.com/MaaMachado" target="_blank"><img src="Css/img/github.png" alt="Logo Rosa do GitHub"></a>
             <a href="https://www.linkedin.com/in/mariaaamachado" target="_blank"><img src="Css/img/linkedin.png" alt="Logo Rosa do Linkedin"></a>
         </div>
 
-        <div>
-            <a href=""><img src="Css/img/proximo.png" alt="Seta para Esquerda"></a>
-            <a href=""><img src="Css/img/proximo.png" alt="Seta para Direita"></a>
+        <div id="btn-setas">
+            <a href="" class="setas"><img src="Css/img/proximo.png" alt="Seta para Esquerda" id="set-esq"></a>
+            <a href="" class="setas"><img src="Css/img/proximo.png" alt="Seta para Direita"></a>
         </div>
     </footer>
     
