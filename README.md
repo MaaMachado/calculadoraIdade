@@ -7,14 +7,12 @@ Construção de um calculador de idade, onde o usuário possa inserir Dia, Mês 
 
 `Seja bem-vindo à documentação do sistema de cálculo de idade, desenvolvido por Maria Machado como parte dos Desafios da Unidade Curricular, de GIT e GITHUB, do curso Técnico em Desenvolvimento de Sistemas - Senac 22/23.
 Nesta documentação, vamos compilar minha visão geral do projeto, os objetivos e o funcionamento final, que incorpora uma fusão entre inovação criativa e competências técnicas excepcionais.`
-Construção de uma calculadora de idade dinâmica utilizando HTML, CSS e JavaScript. O objetivo é permitir que os usuários insiram sua data de nascimento, verificando automaticamente a validade dos valores e evitando datas futuras. 
-A interface responsiva será criada com HTML semântico e estilizada com CSS, enquanto a lógica de cálculo da idade será implementada em JavaScript. Este projeto não só requer habilidades técnicas, mas também destaca a importância do design amigável e da usabilidade.
                
 ---
 
 ## ✨ Visão Geral:
 
-O site "Calculadora de Idade" foi criado para demonstrar os conhecimentos de html, css e javascript apreendidos em sala, trazendo a construção de uma calculadora de idade dinâmica.
+O site "Calculadora de Idade" foi criado para demonstrar os conhecimentos de html, css e javascript apreendidos em sala, trazendo a construção de uma calculadora de idade dinâmica com uma interface, relativamente, responsiva e a lógica de cálculo será implementada pelo javascript.
 Pode-se observar a página inicial (index.html) com um menu, que vai redirecionar para as outras páginas existentes, o conteúdo na parte central e um footer com links das redes sociais da desenvolvedora.
 Nas outras páginas, seguem a mesma linha mas só muda o conteúdo para se encaixar com o título da página (3 páginas = Início(apresentação), Sobre(Desenvolvedora e Projeto) e Calculadora(Objetivo principal do projeto).
 
