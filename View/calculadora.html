@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Css/img/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/art.css">
+    <title>Calculadora de Idade</title>
+</head>
+<body>
+
+    <header>
+        <nav id="menu">
+            <ul id="menu-list">
+                <a href="../index.html"><li>INÍCIO</li></a>
+                <a href="sobre.html"><li>SOBRE</li></a>
+                <a href="calculadora.html"><li>CALCULADORA</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculadora">
+          <form>
+            <div class="input-form">
+              <div class="input">
+                <label for="day">Dia</label>
+                <input type="number" name="day" id="day" placeholder="DD" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um dia válido</span>
+              </div>
+      
+              <div class="input">
+                <label for="month">Mês</label>
+                <input type="number" name="month" id="month" placeholder="MM" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um mês válido</span>
+              </div>
+      
+              <div class="input">
+                <label for="year">Ano</label>
+                <input type="number" name="year" id="year" placeholder="AAAA" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um ano válido</span>
+              </div>
+            </div>
+      
+            <div class="register">
+              <div class="thin-line"></div>
+              <button type="submit" id="prox">
+                <img src="../Css/img/proximo.png" alt="">
+              </button>
+            </div>
+          </form>
+      
+          <div class="age-information">
+            <p><span class="year">--</span> Anos</p>
+            <p><span class="month">--</span> Meses</p>
+            <p><span class="day">--</span> Dias</p>
+          </div>
+    </section>
+
+    <footer>
+        <div id="btn-links">
+            <a href="https://github.com/MaaMachado" target="_blank"><img src="../Css/img/github.png" alt="Logo Rosa do GitHub"></a>
+            <a href="https://www.linkedin.com/in/mariaaamachado" target="_blank"><img src="../Css/img/linkedin.png" alt="Logo Rosa do Linkedin"></a>
+        </div>
+
+        <div id="btn-by">
+            <h5>By Maria Alice Machado</h5>
+        </div>
+    </footer>
+
+    <script type="module" src="../Controller/regular.js"></script>
+    
+</body>
+</html>
