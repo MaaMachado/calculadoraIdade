@@ -22,9 +22,10 @@
   /* HEADER - NAV */
   header{
     width: 100%;
-    height: 15%;
+    height: 10%;
     padding: 1rem 6.4rem;
-    background-color: #f8ddd313;
+    background-color: #f8ddd30f;
+    position: fixed;
   }
   #menu{
     width: 100%;
@@ -49,11 +50,13 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    transition: 1s;
+    transition: all 0.35s ease;
   }
   #menu-list a:hover {
-    color: #F8DDD3;
-    background-color: #C80213;
+    color: #536531;
+    border-bottom: 2px solid #C80213;
+    margin: -0.11% 0;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
   }
   /* FIM DO HEADER - NAV */
 
@@ -61,12 +64,12 @@
   #inicio{
     width: 30%;
     height: fit-content;
-    margin: 11em 6.8em;
+    margin: 20em 6.8em;
   }
   #tittle{
     color: #FC6580;
     font-family: Inter;
-    font-size: 70px;
+    font-size: 5.6em;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -76,6 +79,274 @@
   }
   /* FIM DO SECTION - INICIO */
 
+  /* SECTION - SOBRE */
+  #sobre{
+    width: 80%;
+    margin: 18% 13.6%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 45em;
+    max-width: 80%;
+    padding: 1.5em 0;
+    background: #FFF;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+  }
+  
+  .card::before, .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #C80213;
+    height: 4px;
+  }
+  
+  .card::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+  }
+  
+  .card::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5s ease;
+  }
+  
+  .card .content {
+    width: 35em;
+    max-width: 80%;
+  }
+  
+  .card .logo {
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  .card .h6 {
+    color: #C80213;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .card .hover_content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: all 0.55s ease;
+  }
+  
+  .card .hover_content p {
+    margin: 1.5em 0 0;
+    color: #6E6E70;
+    line-height: 1.4em;
+  }
+  
+  .card:hover {
+    margin: -15% 0;
+    width: 40em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+  }
+  
+  .card:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    transition-delay: 0;
+  }
+  
+  .card:hover::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+  }
+  
+  .card:hover .logo {
+    margin-bottom: 0.5em;
+  }
+  
+  .card:hover .hover_content {
+    max-height: 15em;
+    overflow: auto;
+    transform: none;
+  }
+  /* FIM DO SECTION - SOBRE */
+
+  /* SECTION - CALCULADORA */
+
+  #calculadora{
+    height: 60%;
+    width: 80%;
+    background-color: white;
+    padding: 3.3rem;
+    border-radius: 2.8rem 2.8rem 10rem 2.8rem;
+    margin: 8.4% auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .inForm {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+    color: gray;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .dados input {
+    margin-top: 0.2em;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid lightgray;
+}
+
+  input::placeholder {
+    font-weight: 700;
+    color: grey;
+  }
+
+  .field-required, .valid-info {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgb(252, 47, 47);
+    margin-top: 0.4rem;
+    width: max-content;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  .resgistro {
+      display: grid;
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      place-items: center;
+      margin: 2rem auto;
+      position: relative;
+  }
+
+  .thin-line {
+      width: 100%;
+      height: .1rem;
+      background-color: lightgray;
+  }
+
+  #prox {
+      border: 0;
+      border-radius: 50%;
+      padding: 1.6rem;
+      position: absolute;
+      background-color: pink;
+      cursor: pointer;
+  }
+
+  #prox:hover {
+      background-color: #FC6580;
+  }
+
+  .proxB {
+      width: 3rem;
+      height: 3rem;
+  }
+
+  .infoIdade p{
+      font-size: 0.6em;
+      font-weight: 600;
+  }
+
+  .infoIdade span {
+      color: #FC6580;
+  }
+
+@media screen and (min-width: 768px) {
+    #calculadora {
+        height: max-content;
+        width: 70%;
+        border-radius: 2rem 2rem 14rem 2rem;
+    }
+
+    form {
+        margin-bottom: 2rem;
+    }
+
+    .resgistro {
+        display: flex;
+    }
+
+    .dados {
+        width: 12rem;
+    }
+
+    .field-required, .valid-info {
+        font-size: 1rem;
+    }
+
+    .thin-line {
+        width: 90%;
+    }
+
+    #prox {
+        position: absolute;
+        left: 90%;
+    }
+
+    .infoIdade {
+        font-size: 6.6rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #calculadora {
+        width: 50%;
+    }
+}
+
+  /* FIM DO SECTION - CALCULADORA */
+
   /* FOOTER - DIV*2 */
   footer{
     width: 100%;
@@ -84,7 +355,7 @@
     margin-top: auto;
     display: flex;
     justify-content: space-between;
-    background-color: #f8ddd313;
+    background-color: #f8ddd30f;
   }
   /* Div dos icones */
   #btn-links{
@@ -96,8 +367,9 @@
     border: none;
     padding: 0.5em 1em;
   }
-  /* Div das setas */
-  #set-esq{
-    transform: rotate(180deg);
+  #btn-by{
+    margin: auto 1%;
+    font-size: larger;
+    color: #e2cba9;
   }
    /* FIM FOOTER */

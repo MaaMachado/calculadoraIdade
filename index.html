@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="Css/img/calculadora.png" type="image/x-icon">
     <link rel="stylesheet" href="Css/art.css">
     <script src="Controller/action.js"></script>
+    <script src="Controller/regular.js"></script>
     <title>Calculadora de Idade</title>
 </head>
 <body>
@@ -24,37 +25,70 @@
         <h1 id="tittle"><b>Calculadora</b><br> de Idade</h1>
     </section>
 
-    <section id="sobre" style="display: none;"></section>
+    <section id="sobre" style="display: none;">
+        <article class="container">
+            <div class="card">
+              <div class="content">
+              <p class="logo">Sobre mim</p>
+                <div class="h6">Desenvolvedora full stack &amp; designer </div>
+                <div class="hover_content">
+                  <p>
+                    Olá, eu sou Maria Alice Machado, uma programadora júnior Full Stack com preferência pelo Front-end e UI/UX Design. Graduada em Análise e Desenvolvimento de Sistemas, estou atualmente cursando Computação na UFBA e finalizando um curso técnico em Desenvolvimento de Sistemas. Com uma paixão por aprendizado, já completei mais de 560 horas em cursos variados, abrangendo áreas como design, marketing e informática. Além do mundo da programação, meu tempo livre é preenchido com a leitura e incursões no universo do The Sims.</p>
+                </div>
+              </div>
+            </div>       
+          </article>
+          <article class="container">
+            <div class="card">
+              <div class="content">
+              <p class="logo">Sobre o projeto</p>
+                <div class="h6">Desafio JS - Calculadora de Idade </div>
+                <div class="hover_content">
+                  <p>Construção de uma calculadora de idade dinâmica utilizando HTML, CSS e JavaScript. O objetivo é permitir que os usuários insiram sua data de nascimento, verificando automaticamente a validade dos valores e evitando datas futuras. A interface responsiva será criada com HTML semântico e estilizada com CSS, enquanto a lógica de cálculo da idade será implementada em JavaScript. Este projeto não só requer habilidades técnicas, mas também destaca a importância do design amigável e da usabilidade.</p>
+                </div>
+              </div>
+            </div>       
+          </article>
+    </section>
 
     <section id="calculadora" style="display: none;">
-        <!-- <div id="conteudo-box">
-            <h1 class="txt6">Calculador de idade</h1>
-            <hr>
-            <div id="botoes">
-              <div class="dia">
-                <label for="dia">Dia:</label>
-                <br>
-                <input type="number" id="dia" min="1" max="31" required> 
-            </div>
-            <div class="mes">
-              <label for="mes">Mês:</label>
-              <br>
-              <input type="number" id="mes" min="1" max="12" required>
-          </div>
-       
-            <div class="ano">
-              <label for="ano">Ano:</label> 
-              <br>
-              <input type="number" id="ano" min="1900" max="9999" required>
-          </div>
+        <form>
+            <div class="inForm">
+              <div class="dados">
+                <label for="dia">Dia</label>
+                <input type="number" name="dia" id="dia" placeholder="DD" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um dia válido</span>
+              </div>
       
-            <button onclick="calcular()" id="calc">CALCULAR</button>
+              <div class="dados">
+                <label for="mes">Mês</label>
+                <input type="number" name="mes" id="mes" placeholder="MM" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um mês válido</span>
+              </div>
+      
+              <div class="dados">
+                <label for="ano">Ano</label>
+                <input type="number" name="ano" id="ano" placeholder="AAAA" min="0">
+                <span class="field-required hide">Este campo é obrigatório</span>
+                <span class="valid-info hide">Coloque um ano válido</span>
+              </div>
             </div>
-            
+      
+            <div class="resgistro">
+              <div class="thin-line"></div>
+              <button type="submit" id="prox">
+                <img src="Css/img/proximo.png" alt="" class="proxB">
+              </button>
+            </div>
+          </form>
+      
+          <div class="infoIdade">
+            <p><span class="ano">--</span> ano(s)</p>
+            <p><span class="mês">--</span> mes(es)</p>
+            <p><span class="dia">--</span> dia(s)</p>
           </div>
-        
-      </section>
-              <div id="resultado"></div> -->
     </section>
 
     <footer>
@@ -63,9 +97,8 @@
             <a href="https://www.linkedin.com/in/mariaaamachado" target="_blank"><img src="Css/img/linkedin.png" alt="Logo Rosa do Linkedin"></a>
         </div>
 
-        <div id="btn-setas">
-            <a href="" class="setas"><img src="Css/img/proximo.png" alt="Seta para Esquerda" id="set-esq"></a>
-            <a href="" class="setas"><img src="Css/img/proximo.png" alt="Seta para Direita"></a>
+        <div id="btn-by">
+            <h5>By Maria Alice Machado</h5>
         </div>
     </footer>
     
