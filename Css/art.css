@@ -64,12 +64,12 @@
   #inicio{
     width: 30%;
     height: fit-content;
-    margin: 13em 6.8em;
+    margin: 20em 6.8em;
   }
   #tittle{
     color: #FC6580;
     font-family: Inter;
-    font-size: 70px;
+    font-size: 5.6em;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -367,8 +367,9 @@
     border: none;
     padding: 0.5em 1em;
   }
-  /* Div das setas */
-  #set-esq{
-    transform: rotate(180deg);
+  #btn-by{
+    margin: auto 1%;
+    font-size: larger;
+    color: #e2cba9;
   }
    /* FIM FOOTER */
