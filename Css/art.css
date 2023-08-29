@@ -53,9 +53,8 @@
     transition: all 0.35s ease;
   }
   #menu-list a:hover {
-    color: #536531;
-    border-bottom: 2px solid #C80213;
-    margin: -0.11% 0;
+    color: white;
+    background-color: #C80213;
     box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
   }
   /* FIM DO HEADER - NAV */
@@ -213,14 +212,14 @@
     margin-bottom: 3.2rem;
   }
 
-  .inForm {
+  .input-form {
     display: flex;
     align-items: center;
     gap: 1.2rem;
     width: 100%;
   }
 
-  .dados {
+  .input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +233,7 @@
     font-weight: 600;
   }
 
-  .dados input {
+  .input input {
     margin-top: 0.2em;
     width: 100%;
     padding: 1rem;
@@ -259,7 +258,7 @@
       display: none;
   }
 
-  .resgistro {
+  .register {
       display: grid;
       width: 100%;
       justify-self: center;
@@ -288,21 +287,21 @@
       background-color: #FC6580;
   }
 
-  .proxB {
+  .prox img {
       width: 3rem;
       height: 3rem;
   }
 
-  .infoIdade p{
+  .age-information p{
       font-size: 0.6em;
       font-weight: 600;
   }
 
-  .infoIdade span {
+  .age-information span {
       color: #FC6580;
   }
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     #calculadora {
         height: max-content;
         width: 70%;
@@ -313,11 +312,11 @@
         margin-bottom: 2rem;
     }
 
-    .resgistro {
+    .register {
         display: flex;
     }
 
-    .dados {
+    .input {
         width: 12rem;
     }
 
@@ -329,22 +328,21 @@
         width: 90%;
     }
 
-    #prox {
+    button {
         position: absolute;
         left: 90%;
     }
 
-    .infoIdade {
+    .age-information {
         font-size: 6.6rem;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    #calculadora {
+  #calculadora {
         width: 50%;
     }
 }
-
   /* FIM DO SECTION - CALCULADORA */
 
   /* FOOTER - DIV*2 */
