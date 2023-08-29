@@ -82,7 +82,7 @@
   /* SECTION - SOBRE */
   #sobre{
     width: 80%;
-    margin: 15% 13.6%;
+    margin: 18% 13.6%;
     padding: 2%;
     display: flex;
     justify-content: space-evenly;
@@ -99,7 +99,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    width: 28em;
+    width: 45em;
     max-width: 80%;
     padding: 1.5em 0;
     background: #FFF;
@@ -131,7 +131,7 @@
   }
   
   .card .content {
-    width: 29em;
+    width: 35em;
     max-width: 80%;
   }
   
@@ -145,7 +145,7 @@
   
   .card .h6 {
     color: #C80213;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 2px;
@@ -166,8 +166,8 @@
   }
   
   .card:hover {
-    margin: -20% 0;
-    width: 28em;
+    margin: -15% 0;
+    width: 40em;
     box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
   }
   
@@ -193,7 +193,159 @@
     overflow: auto;
     transform: none;
   }
-  /* FIM DO SECTION - INICIO */
+  /* FIM DO SECTION - SOBRE */
+
+  /* SECTION - CALCULADORA */
+
+  #calculadora{
+    height: 60%;
+    width: 80%;
+    background-color: white;
+    padding: 3.3rem;
+    border-radius: 2.8rem 2.8rem 10rem 2.8rem;
+    margin: 8.4% auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .inForm {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+    color: gray;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .dados input {
+    margin-top: 0.2em;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid lightgray;
+}
+
+  input::placeholder {
+    font-weight: 700;
+    color: grey;
+  }
+
+  .field-required, .valid-info {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgb(252, 47, 47);
+    margin-top: 0.4rem;
+    width: max-content;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  .resgistro {
+      display: grid;
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      place-items: center;
+      margin: 2rem auto;
+      position: relative;
+  }
+
+  .thin-line {
+      width: 100%;
+      height: .1rem;
+      background-color: lightgray;
+  }
+
+  #prox {
+      border: 0;
+      border-radius: 50%;
+      padding: 1.6rem;
+      position: absolute;
+      background-color: pink;
+      cursor: pointer;
+  }
+
+  #prox:hover {
+      background-color: #FC6580;
+  }
+
+  .proxB {
+      width: 3rem;
+      height: 3rem;
+  }
+
+  .infoIdade p{
+      font-size: 0.6em;
+      font-weight: 600;
+  }
+
+  .infoIdade span {
+      color: #FC6580;
+  }
+
+@media screen and (min-width: 768px) {
+    #calculadora {
+        height: max-content;
+        width: 70%;
+        border-radius: 2rem 2rem 14rem 2rem;
+    }
+
+    form {
+        margin-bottom: 2rem;
+    }
+
+    .resgistro {
+        display: flex;
+    }
+
+    .dados {
+        width: 12rem;
+    }
+
+    .field-required, .valid-info {
+        font-size: 1rem;
+    }
+
+    .thin-line {
+        width: 90%;
+    }
+
+    #prox {
+        position: absolute;
+        left: 90%;
+    }
+
+    .infoIdade {
+        font-size: 6.6rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #calculadora {
+        width: 50%;
+    }
+}
+
+  /* FIM DO SECTION - CALCULADORA */
 
   /* FOOTER - DIV*2 */
   footer{
