@@ -6,6 +6,7 @@ Construção de um calculador de idade, onde o usuário possa inserir Dia, Mês 
 
 
 `Bem-vindo à documentação do sistema de cálculo de idade, desenvolvido por Maria Machado como parte dos Desafios da Unidade Curricular de GIT e GITHUB do curso Técnico em Desenvolvimento de Sistemas - Senac 22/23. Nesta documentação, apresentarei uma visão geral do projeto, seus objetivos e funcionamento final, que combina inovação criativa e competências técnicas excepcionais.`
+Observação: Essa atividade pode ser observada, também, no repositório "desafiosJS-Senac" na pasta conjuntodosDesafios, como desafio6.
                
 ---
 
